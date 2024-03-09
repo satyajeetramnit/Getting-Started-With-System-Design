@@ -261,3 +261,59 @@ The article provides a clear explanation of the role of load balancers in distri
     - **Suggestion:** Consider summarizing the key takeaways or providing a checklist for readers to assess their database scalability strategy.
 
 **Conclusion:** *Part 2 effectively addresses the challenges posed by databases in the scalability journey and offers two distinct paths. Providing a bit more detail on denormalization and caching, along with practical examples or case studies, could enhance the article's educational value. Overall, it serves as a valuable guide for readers navigating database scalability issues.*
+
+
+**[Review of Part 3 - Cache:](https://web.archive.org/web/20220530193926/https://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache)**
+
+*The article provides valuable insights into implementing caching as a crucial aspect of scalability. Here are some key points and feedback:*
+
+1. **Introduction to Caching:**
+
+    - **Positive:** The article sets the stage by explaining the need for caching after achieving a scalable database solution.
+
+    - **Suggestion:** Consider briefly mentioning the impact of caching on improving user experience and reducing page load times.
+
+2. **In-Memory Caches:**
+
+    - **Positive:** Recommends in-memory caches like Memcached or Redis over file-based caching for their benefits in server cloning and auto-scaling.
+
+    - **Suggestion:** Briefly explain why in-memory caching is preferred for scalability and performance, emphasizing the speed of operations.
+
+3. **Caching Patterns:**
+
+    - **Positive:** Introduces two caching patterns: Cached Database Queries and Cached Objects.
+
+    - **Suggestion:** Provide more context on the scenarios where each pattern is most suitable. Consider discussing real-world use cases or examples to illustrate the pros and cons of each pattern.
+
+4. **Cached Database Queries:**
+
+    - **Positive:** Discusses the commonly used pattern of caching query results but highlights challenges such as expiration and complex query handling.
+
+    - **Suggestion:** Offer potential solutions or best practices for managing expiration and handling changes in cached queries.
+
+5. **Cached Objects:**
+
+    - **Positive:** Recommends the Cached Objects pattern, emphasizing the conceptual alignment with coding practices and the ease of implementation.
+
+    - **Suggestion:** Provide more examples or case studies demonstrating the benefits of caching entire instances of objects. Clarify the asynchronous processing capabilities introduced by this pattern.
+
+6. **Ideas for Objects to Cache:**
+
+    - **Positive:** Provides practical examples of objects to cache, enhancing the article's applicability.
+
+    - **Suggestion:** Encourage readers to identify and cache objects specific to their application domain, promoting a tailored approach to caching.
+
+7. **Redis vs. Memcached:**
+
+    - **Positive:** Expresses a preference for Redis due to its additional features, but acknowledges Memcached's scalability.
+
+    - **Suggestion:** Provide a brief comparison of Redis and Memcached features, helping readers make an informed choice based on their specific requirements.
+
+8. **Conclusion:**
+
+    - **Positive:** The author's enthusiasm for caching and its positive impact is evident.
+
+    - **Suggestion:** Consider summarizing the key takeaways and providing a call to action for readers to implement caching in their scalable systems.
+
+**Conclusion:** *Part 3 effectively covers the importance of caching, introduces different patterns, and provides practical recommendations. Enhancing the explanation of caching patterns with more examples and detailing the benefits of each approach could further strengthen the article's educational value. Overall, it serves as a valuable guide for readers looking to optimize their systems through caching.*
+
