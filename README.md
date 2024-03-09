@@ -176,3 +176,45 @@ These principles provide a solid foundation for designing robust systems. As you
 <br/>
 <br/>
 <br/>
+
+
+## **[Scalability for Dummies](https://web.archive.org/web/20220530193926/https://www.lecloud.net/tagged/scalability)** - A detailed Summary
+
+### *What it would take to make a web service massively scalable?*
+
+**[Review of Part 1 - Clones:](https://web.archive.org/web/20220331063644/https://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)**
+
+The article provides a clear explanation of the role of load balancers in distributing requests among multiple application servers for scalability. Here are some key points and feedback:
+
+1. **Consistent Codebase:**
+
+    - **Positive:** The importance of maintaining a consistent codebase on all servers to ensure users receive the same results, regardless of the server they interact with, is well highlighted.
+
+    - **Suggestion:** Consider emphasizing the significance of version control systems (e.g., Git) in managing the uniformity of the codebase across servers.
+
+2. **Centralized Session Storage:**
+
+    - **Positive:** The article rightly points out the need for centralized session storage to maintain user-related data consistency across different servers.
+
+    - **Suggestion:** Expanding on why an external persistent cache, like Redis, might have better performance compared to an external database for session storage could enhance the understanding.
+
+3. **Deployment with Capistrano:**
+
+    - **Positive:** The mention of Capistrano as a solution for deploying code changes across servers is good, providing a practical tool for managing deployments.
+
+    - **Suggestion:** Consider offering a brief explanation or reference for those unfamiliar with Capistrano, encouraging readers to explore its capabilities.
+
+4. **Creating Super-Clone (AMI):**
+
+    - **Positive:** The concept of creating a super-clone (AMI) from an existing server and using it as a base for new instances is explained effectively.
+
+    - **Suggestion:** Clarify the term "initial deployment of your latest code" to ensure readers understand the specific steps involved in updating the code on the newly created instances.
+
+5. **Overall Flow:**
+
+    - **Positive:** The article has a logical flow, moving from load balancing to consistent codebase, centralized session storage, deployment, and creating a super-clone.
+
+    - **Suggestion:** Consider summarizing the key steps or creating a checklist for readers to follow when implementing these strategies for scalability.
+
+**Conclusion:** *Part 1 provides valuable insights into maintaining a scalable architecture through consistent codebase, centralized session storage, and effective deployment strategies. It would benefit from a bit more detail in certain areas and the inclusion of practical examples or case studies if possible.*
+
