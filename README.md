@@ -218,3 +218,46 @@ The article provides a clear explanation of the role of load balancers in distri
 
 **Conclusion:** *Part 1 provides valuable insights into maintaining a scalable architecture through consistent codebase, centralized session storage, and effective deployment strategies. It would benefit from a bit more detail in certain areas and the inclusion of practical examples or case studies if possible.*
 
+
+
+**[Review of Part 2 - Database:](https://web.archive.org/web/20220530193926/https://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database)**
+
+*The article effectively addresses the challenges associated with database scalability and presents two paths for consideration. Here are some key points and feedback:*
+
+1. **Database Challenges:**
+
+    - **Positive:** The article identifies the common bottleneck of the database as a source of performance degradation as the application scales.
+
+    - **Suggestion:** Consider providing a brief explanation for readers who might be less familiar with terms like "sharding," "denormalization," and "SQL tuning."
+
+2. **Path #1: Stick with MySQL:**
+
+    - **Positive:** Describes the option of sticking with MySQL, introducing the role of a database administrator, and addressing challenges like master-slave replication and hardware upgrades.
+
+    - **Suggestion:** It might be beneficial to mention that while this path can work, it has potential downsides in terms of increasing complexity and cost.
+
+3. **Path #2: Denormalize and Use NoSQL:**
+
+    - **Positive:** Introduces the concept of denormalization and the option of using NoSQL databases like MongoDB or CouchDB for better scalability.
+
+    - **Suggestion:** Elaborate on the trade-offs and considerations involved in denormalization, especially the impact on data consistency and integrity.
+
+4. **Handling Joins in Application Code:**
+
+    - **Positive:** Highlights the need to move Joins from the database to the application code when following Path #2.
+
+    - **Suggestion:** Clarify that while this approach improves scalability, it requires careful design in the application layer to maintain data integrity and ensure efficient Joins.
+
+5. **Introducing Caching:**
+
+    - **Positive:** Recognizes the eventual need for caching to address slowing database requests.
+
+    - **Suggestion:** Expand on the types of caching (e.g., application-level caching, database query caching) and their respective benefits and challenges.
+
+6. **Conclusion:**
+
+    - **Positive:** The article encourages proactive measures and decision-making regarding database scalability.
+
+    - **Suggestion:** Consider summarizing the key takeaways or providing a checklist for readers to assess their database scalability strategy.
+
+**Conclusion:** *Part 2 effectively addresses the challenges posed by databases in the scalability journey and offers two distinct paths. Providing a bit more detail on denormalization and caching, along with practical examples or case studies, could enhance the article's educational value. Overall, it serves as a valuable guide for readers navigating database scalability issues.*
