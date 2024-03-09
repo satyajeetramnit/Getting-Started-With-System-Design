@@ -317,3 +317,36 @@ The article provides a clear explanation of the role of load balancers in distri
 
 **Conclusion:** *Part 3 effectively covers the importance of caching, introduces different patterns, and provides practical recommendations. Enhancing the explanation of caching patterns with more examples and detailing the benefits of each approach could further strengthen the article's educational value. Overall, it serves as a valuable guide for readers looking to optimize their systems through caching.*
 
+
+**[Review of Part 4 - Asynchronism:](https://web.archive.org/web/20220530193926/https://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache)**
+
+*The article effectively addresses the importance of asynchronism in improving user experience and scalability. Here are some key points and feedback:*
+
+1.  **Introduction to Asynchronism:**
+
+    -   **Positive**: The bakery analogy provides a relatable scenario to explain the annoyance of waiting and sets the stage for introducing asynchronism.
+    -   **Suggestion**: Consider emphasizing how asynchronism addresses the issue of waiting times, improving user satisfaction.
+2.  **Two Asynchronous Paradigms:**
+
+    -   **Async #1 - Pre-computing:**
+
+        -   **Positive:** Describes the "bake the breads at night and sell them in the morning" approach, drawing a parallel to pre-rendering static content in web applications.
+        -   **Suggestion:** Consider expanding on specific examples or use cases where pre-computing is highly beneficial. Discuss the advantages of serving static content and the impact on scalability.
+    -   **Async #2 - Handling Tasks Asynchronously:**
+
+        -   **Positive:** Explains the need for handling dynamic or time-consuming tasks asynchronously using a job queue system.
+        -   Suggestion: The simplified example of a job queue workflow is effective. Consider providing a more detailed example or case study to enhance understanding.
+3.  **Workflow of Asynchronous Tasks:**
+
+    -   **Positive:** Presents a typical workflow for handling asynchronous tasks, from user initiation to job queue processing and frontend notification.
+    -   **Suggestion:** Offer a brief mention of potential challenges in handling asynchronous tasks, such as monitoring job progress and handling failures.
+4.  **Recommendations for Asynchronous Processing:**
+
+    -  **Positive:** Encourages developers to consider asynchronous processing for time-consuming tasks, highlighting the scalability benefits.
+    -   **Suggestion:** Consider providing additional resources or references for readers interested in implementing asynchronous processing, beyond the introductory RabbitMQ tutorials.
+5.  **Conclusion:**
+
+    -   **Positive**: Concludes with a strong recommendation to always consider doing time-consuming tasks asynchronously for improved scalability.
+    -   **Suggestion:** Consider summarizing the key benefits of asynchronism and reiterating its impact on user experience and backend scalability.
+
+**Conclusion:** *Part 4 effectively communicates the significance of asynchronism in web applications, providing practical examples and encouraging developers to explore and implement asynchronous processing. Enhancing the article with more detailed examples and resources could further support readers in implementing these concepts in their projects. Overall, it serves as a valuable guide for those aiming to improve the responsiveness and scalability of their applications.*
