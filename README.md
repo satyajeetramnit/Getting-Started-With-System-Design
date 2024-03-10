@@ -350,3 +350,26 @@ The article provides a clear explanation of the role of load balancers in distri
     -   **Suggestion:** Consider summarizing the key benefits of asynchronism and reiterating its impact on user experience and backend scalability.
 
 **Conclusion:** *Part 4 effectively communicates the significance of asynchronism in web applications, providing practical examples and encouraging developers to explore and implement asynchronous processing. Enhancing the article with more detailed examples and resources could further support readers in implementing these concepts in their projects. Overall, it serves as a valuable guide for those aiming to improve the responsiveness and scalability of their applications.*
+
+
+### Let's explore these high-level trade-offs in the context of system design:
+
+1. **Performance vs Scalability:**
+
+    - **Explanation:**
+
+        - **Performance:** Refers to the speed and efficiency with which a system executes tasks or processes. Generally, increasing performance means serving more units of work, but it can also be to handle larger units of work, such as when datasets grow.
+
+        - **Scalability:** Refers to a system's ability to handle an increasing amount of load or demand. A service is scalable if it results in increased performance in a manner proportional to resources added.
+
+    - **Considerations:**
+
+        - Improving performance might involve optimizing algorithms or using resource-intensive operations, but this can impact scalability.
+
+        - Enhancing scalability often requires distributing workload across multiple resources, which might affect individual performance.
+
+
+        ***Another way to look at performance vs scalability:***
+
+        - If you have a performance problem, your system is slow for a single user.
+        - If you have a scalability problem, your system is fast for a single user but slow under heavy load.
