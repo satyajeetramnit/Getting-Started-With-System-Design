@@ -411,3 +411,54 @@ The article provides a clear explanation of the role of load balancers in distri
         - Good scalability is achievable with intentional design efforts.
         - Architects must consider growth, redundancy, and system heterogeneity.
 
+2. **Latency vs Throughput:**
+
+    - **Explanation:**
+
+        - **Latency:** Represents the time it takes for a single request to be processed or perform some action or to produce some result.
+
+        - **Throughput:** Indicates the number of such actions or results per unit of time or the number of requests processed in a given timeframe.
+
+    - **Considerations:**
+
+        - Reducing latency typically involves optimizing for quick response times, potentially at the expense of throughput.
+
+        - Maximizing throughput may involve batch processing or optimizing for handling multiple requests concurrently, which could increase latency for individual requests.
+
+    ### [A Word on Scalability](https://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html) - A Breif Summary
+
+    #### Key Takeaway
+
+    *Crucial for hardware designers using High Level Synthesis to understand the difference between latency (time for an action) and throughput (actions per unit time).*
+
+    #### Summary
+
+    - **Introduction:**
+
+        - High Level Synthesis reduces barriers between systems and hardware designers, sharing a common language.
+
+    - **Definition of Terms:**
+        - **Latency:** Time for an action or result.
+        - **Throughput:** Actions or results per unit time.
+
+    - **Examples:**
+
+        - **Manufacturing Example:**
+            - Latency: 8 hours.
+            - Throughput: 120 cars/day or 5 cars/hour.
+
+    - **Design Example:**
+        - Parameters: Clock frequency, computation time, throughput, word width.
+        - Latency in clock periods.
+        - Throughput as "one word every 10 clock periods."
+
+    - **Final Clarification:**
+
+        - Some tools wrongly express throughput in clock periods.
+        - Designer uses latency and throughput for hardware creation.
+
+
+    - **Conclusion:**
+
+        - Understanding latency and throughput is essential for efficient hardware design.
+
