@@ -462,3 +462,17 @@ The article provides a clear explanation of the role of load balancers in distri
 
         - Understanding latency and throughput is essential for efficient hardware design.
 
+3. **Availability vs Consistency:**
+
+    - **Explanation:**
+
+        - **Availability:** Ensures that a system is operational and accessible, even in the presence of failures.
+
+        - **Consistency:** Ensures that all nodes in a distributed system have the same data view at the same time.
+
+    - **Considerations:**
+
+        - Focusing on high availability may lead to eventual consistency, where data replicas might temporarily be out of sync.
+
+        - Prioritizing strong consistency may result in reduced availability, especially during network partitions or failures.
+
