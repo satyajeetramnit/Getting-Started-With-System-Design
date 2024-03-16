@@ -539,3 +539,56 @@ The article provides a clear explanation of the role of load balancers in distri
     -   ***Architectural Awareness:*** Architects must be mindful of growth aspects, redundancy requirements, and the challenges posed by heterogeneity to ensure scalable systems.
 
 In summary, achieving good scalability is possible but requires a fundamental understanding of the system's growth patterns, redundancy needs, and how to handle heterogeneity. It is a proactive design consideration, not an afterthought, and involves architecting systems with scalability in mind from the outset.
+
+
+### Latency vs Throughput: Clarifying Concepts
+
+1. **Definitions:**
+
+    - ***Latency:*** The time required to perform a specific action or produce a result, measured in units of time (e.g., hours, minutes, seconds, nanoseconds, or clock periods).
+
+    - ***Throughput:*** The number of actions or results produced per unit of time, measured in units of the produced entity (e.g., cars, bits, words) per unit of time (e.g., seconds, clock periods).
+
+2. **General Goal:**
+
+    - ***Objective:*** Aim for maximal throughput with acceptable latency.
+
+    - ***Priority:*** While maximizing throughput, latency should still be within an acceptable range to ensure a responsive system.
+
+3. **Manufacturing Example:**
+
+    - ***Scenario:*** An assembly line manufacturing cars.
+
+    - ***Latency:*** Time to manufacture one car (8 hours).
+
+    - ***Throughput:*** Number of cars produced per day (120 cars/day) or per hour (5 cars/hour).
+
+4. **Design Example:**
+
+    - ***Communication Device Characteristics:***
+
+        - Clock frequency: 100 MHz
+
+        - Time available for computation: 1000 ns
+
+        - Throughput: 640 Mbits/second
+
+        - Word width of each output: 64 bits
+
+    - ***Latency Calculation:*** 100 clock periods (1000 ns at 100 MHz)
+
+    - ***Throughput Calculation:*** One word every 10 clock periods (0.1 words/clock period).
+
+5. **Significance for Hardware Designers:**
+
+    - ***High-Level Synthesis Impact:*** High-Level Synthesis methodology reduces the barrier between systems and hardware designers.
+
+    - ***Terminology Exposure:*** Both systems and hardware designers use the same terminology, leading to a shared understanding of concepts like latency and throughput.
+
+6. **Final Clarification:**
+
+    - ***Throughput Reporting:*** Some tools may express throughput in clock periods rather than units per unit of time, for convenience.
+
+    - ***Caution:*** While common, expressing throughput in clock periods is technically incorrect and may lead to confusion.
+
+Understanding the distinction between latency and throughput is crucial for hardware designers, as it enables them to design systems that meet specific performance requirements. Latency is a measure of time, while throughput focuses on the rate of producing results per unit of time, and both play essential roles in designing efficient and responsive systems.
